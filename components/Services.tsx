@@ -33,8 +33,8 @@ export default function Services() {
       className="bg-surface-container-low border-y border-outline-variant"
       id="services"
     >
-      <div className="max-w-container-max mx-auto px-margin-desktop pt-[100px] pb-[110px]">
-        <div className="grid md:grid-cols-2 gap-[72px] items-start">
+      <div className="max-w-container-max mx-auto px-margin-desktop section-padding">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="sticky top-32">
             <span className="font-mono-sm text-mono-sm uppercase tracking-widest text-secondary font-semibold">
               Capabilities
@@ -50,14 +50,14 @@ export default function Services() {
           <InViewWrapper
             animation="reveal-card"
             staggerDelay={100}
-            className="grid gap-5"
+            className="grid gap-gutter"
           >
             {services.map((service) => (
               <div
                 key={service.icon}
-                className="reveal-card bg-white p-[30px] border border-outline-variant rounded-xl group hover:border-primary transition-colors"
+                className="reveal-card bg-white p-8 border border-outline-variant rounded-xl group hover:border-primary transition-colors"
               >
-                <span className="material-symbols-outlined text-primary text-3xl mb-[18px]">
+                <span className="material-symbols-outlined text-primary text-3xl mb-4">
                   {service.icon}
                 </span>
                 <h3 className="font-headline-md text-headline-md mb-3">

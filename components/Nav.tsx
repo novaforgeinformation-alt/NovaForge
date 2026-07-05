@@ -1,8 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
+import { useContact } from '@/lib/contact-context'
 
 export default function Nav() {
+  const { setOpen } = useContact()
   const [overDark, setOverDark] = useState(false)
 
   useEffect(() => {
@@ -30,12 +33,13 @@ export default function Nav() {
       }`}
     >
       <div className="flex items-center gap-4">
-        <div
-          className="h-10 w-10 rounded-full bg-gradient-to-br from-primary to-[#1a6b50] flex items-center justify-center text-on-primary font-headline-md text-sm font-bold"
-          aria-label="NovaForge Logo"
-        >
-          NF
-        </div>
+        <Image
+          src="/logo.png"
+          alt="NovaForge"
+          width={40}
+          height={40}
+          className="h-10 w-10 rounded-full object-cover"
+        />
         <span className={`font-headline-md font-bold ${overDark ? 'text-white' : 'text-primary'}`}>
           NovaForge
         </span>
@@ -78,8 +82,9 @@ export default function Nav() {
             ? 'bg-white text-primary hover:bg-white/90'
             : 'bg-primary text-on-primary hover:bg-opacity-90'
         }`}
+        onClick={() => setOpen(true)}
       >
-        Book a Discovery Call
+        Send an Inquiry
       </button>
     </nav>
   )

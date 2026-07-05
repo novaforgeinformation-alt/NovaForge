@@ -88,7 +88,7 @@ const config: Config = {
       },
       spacing: {
         base: '8px',
-        'container-max': '1240px',
+        'container-max': '1280px',
         'margin-desktop': '64px',
         'margin-mobile': '24px',
         gutter: '24px',

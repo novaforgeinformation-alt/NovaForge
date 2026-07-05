@@ -18,8 +18,8 @@ body {
 }
 
 .section-padding {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 @media (max-width: 768px) {
@@ -42,7 +42,7 @@ body {
 
 .fade-up {
   opacity: 0;
-  transform: translateY(32px);
+  transform: translateY(2rem);
   transition: all 0.7s ease;
 }
 

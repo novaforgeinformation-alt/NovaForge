@@ -37,7 +37,7 @@ export default function WhyNovaForge() {
               The NovaForge Standard.
             </h2>
           </div>
-          <div className="md:w-2/3 grid sm:grid-cols-2 gap-x-14 gap-y-10">
+          <div className="md:w-2/3 grid sm:grid-cols-2 gap-x-12 gap-y-12">
             {features.map((feature) => (
               <div key={feature.icon}>
                 <div className="w-10 h-10 bg-primary-fixed flex items-center justify-center rounded mb-4">

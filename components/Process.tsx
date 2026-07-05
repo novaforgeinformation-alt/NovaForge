@@ -31,7 +31,7 @@ export default function Process() {
   return (
     <section className="bg-primary text-on-primary" id="process">
       <InViewWrapper animation="fade-up">
-        <div className="max-w-container-max mx-auto px-margin-desktop pt-24 pb-24">
+        <div className="max-w-container-max mx-auto px-margin-desktop section-padding">
           <div className="mb-16">
             <h2 className="font-headline-lg text-headline-lg max-md:text-headline-lg-mobile">
               Our Engineering Pipeline.
@@ -41,13 +41,13 @@ export default function Process() {
               ambiguity to absolute clarity.
             </p>
           </div>
-          <div className="grid md:grid-cols-4 gap-12">
+          <div className="grid md:grid-cols-4 gap-8">
             {steps.map((step, i) => (
-              <div key={step.number} className="relative">
-                <span className="font-display-xl text-4xl opacity-20 block mb-6">
+              <div key={step.number} className="relative space-y-6">
+                <span className="font-display-xl text-4xl opacity-20 block mb-4">
                   {step.number}
                 </span>
-                <h3 className="font-headline-md text-headline-md mb-[18px]">
+                <h3 className="font-headline-md text-headline-md">
                   {step.title}
                 </h3>
                 <p className="font-body-md text-body-md text-on-primary-container">

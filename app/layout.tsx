@@ -1,8 +1,12 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import { fontVariables } from '@/lib/fonts'
+import { ContactProvider } from '@/lib/contact-context'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
+import Modal from '@/components/Modal'
+import ContactForm from '@/components/ContactForm'
+import ModalTrigger from '@/components/ModalTrigger'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://novaforge.dev'),
@@ -61,9 +65,12 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-background text-on-surface">
-        <Nav />
-        <main>{children}</main>
-        <Footer />
+        <ContactProvider>
+          <Nav />
+          <main>{children}</main>
+          <Footer />
+          <ModalTrigger />
+        </ContactProvider>
       </body>
     </html>
   )
