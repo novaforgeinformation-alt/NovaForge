@@ -20,6 +20,18 @@ export const metadata: Metadata = {
     type: 'website',
     siteName: 'NovaForge',
     locale: 'en_US',
+    images: [{ url: '/cover1.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'NovaForge | Software Built Around Your Business',
+    description:
+      'NovaForge helps businesses grow through custom software, automation, and modern digital solutions.',
+    images: ['/cover1.jpg'],
+  },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
   },
   robots: {
     index: true,
