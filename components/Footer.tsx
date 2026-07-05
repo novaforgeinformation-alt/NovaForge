@@ -34,7 +34,7 @@ export default function Footer() {
           </h4>
           <div className="flex flex-col gap-4 font-body-md text-body-md">
             <a className="text-on-primary-container hover:text-white transition-colors" href="https://www.linkedin.com/company/novaforgeltd/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a className="text-on-primary-container hover:text-white transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a className="text-on-primary-container hover:text-white transition-colors" href="https://www.instagram.com/nova.forgedev/" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
         <div className="space-y-6">
