@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       <div className="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-on-primary-container/20">
         <p className="font-body-md text-body-md text-on-primary-container text-center md:text-left opacity-70">
-          &copy; 2024 NovaForge. All rights reserved.
+          &copy; 2026 NovaForge. All rights reserved.
         </p>
       </div>
     </footer>
