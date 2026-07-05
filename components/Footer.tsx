@@ -33,7 +33,7 @@ export default function Footer() {
             Connect
           </h4>
           <div className="flex flex-col gap-4 font-body-md text-body-md">
-            <a className="text-on-primary-container hover:text-white transition-colors" href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a className="text-on-primary-container hover:text-white transition-colors" href="https://www.linkedin.com/company/novaforgeltd/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a className="text-on-primary-container hover:text-white transition-colors" href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Footer() {
       </div>
       <div className="max-w-container-max mx-auto px-margin-desktop py-8 border-t border-on-primary-container/20">
         <p className="font-body-md text-body-md text-on-primary-container text-center md:text-left opacity-70">
-          &copy; 2026 NovaForge. All rights reserved.
+          &copy; NovaForge. All rights reserved.
         </p>
       </div>
     </footer>
